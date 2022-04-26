@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-background {
+  background-color: #023a51;
+}
+
+.nav-background-tr {
+  background-color: rgba(0, 0, 0, 0.201);
+}
+
+.img-nav {
+  width: 10%;
+}
+
+.icon-height {
+  height: 40px;
+}
+
+.icon-nav {
+  height: 25;
+}
+
+.btn-close-off {
+  right: 0.5rem;
+  top: 0.5rem;
+  position: absolute;
+  background-color: rgb(13, 255, 13);
+  border-radius: 0;
+}
+
+.btn-close-end {
+  right: 0.5rem;
+  top: 0.5rem;
+  position: absolute;
+  border-radius: 0;
+}
+
+.link-off {
+  text-decoration: none;
+  color: rgb(13, 255, 13);
+}
+
+.link-off:hover {
+  color: black;
+}
+
+.shop-bg {
+  height: 12rem;
+  background-color: #023a51;
+}
+
+.card {
+  border: none;
+}
+
+.footer-bg {
+  background-color: #023a51;
+}
