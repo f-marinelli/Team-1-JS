@@ -59,6 +59,7 @@ hr {
 
 .modifyHover a {
   padding-top: 7.5px;
+  padding-right: 25px;
 }
 
 .modifyWidht {
@@ -67,4 +68,39 @@ hr {
 
 .spanHover {
   cursor: pointer;
+}
+
+.modifyUl {
+  list-style-type: none;
+}
+
+.modifyPadding {
+  margin-left: 4vw;
+}
+
+.bordo {
+  border-bottom: 5px solid greenyellow;
+  padding-bottom: 3px;
+}
+
+.modifyMargin {
+  padding-top: 2vw;
+  margin-left: 15vw;
+  margin-right: 27.6vw;
+}
+
+.spanHover:hover {
+  color: whitesmoke;
+}
+
+.pPaddingBottom {
+  padding-bottom: 3vw;
+}
+
+.pPaddingTop {
+  padding-top: 3vw;
+}
+
+.bPadding {
+  padding-left: 0.2vw;
 }
