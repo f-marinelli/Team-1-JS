@@ -1,7 +1,5 @@
 body{
     background-color: #023A51;
-    width: 80%;
-    margin: auto;
 }
 
 /*NAVBAR*/
@@ -10,16 +8,8 @@ body{
     border-radius: 50%;
 }
 
-.navbar-nav{
-    width: 75%;
-}
-
 .button-responsive{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     column-gap: 10px;
-    flex-direction: row-reverse;
 }
 
 .navbar-toggler{
@@ -73,7 +63,7 @@ body{
 @media(min-width:300px){
     .modal-query{
         display: none;
-        height: 35;
+        height: 35px;
         width: 135px;
     }
     .canvas-button,
