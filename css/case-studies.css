@@ -1,0 +1,9 @@
+nav {
+    background-color: #023a51;
+    background-image: url('/imgs/bg-ttb.svg');
+    background-size: cover;
+}
+
+h1{
+    font-size: 60px;
+}
