@@ -21,6 +21,9 @@ footer{
 h3{
     font-size: 40px;
 }
+h3:hover{
+    color: #2cbc63;
+}
 .borderb{
     border-top: 3px solid white;
 }
