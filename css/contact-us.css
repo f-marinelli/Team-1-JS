@@ -29,7 +29,7 @@ svg {
 }
 
 @media(max-width:540px) {
-  .right .btn {
+  .right .btn-success {
     display: none;
   }
 }
