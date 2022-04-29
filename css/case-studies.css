@@ -14,7 +14,16 @@ footer{
     background-image: url('/imgs/map-ft.png');
     background-size: cover;
 }
-
+.imgopacity{
+    background-color:#023a51;
+    opacity: 80%;
+}
+h3{
+    font-size: 40px;
+}
+.borderb{
+    border-top: 3px solid white;
+}
 h2{
     font-size: 58px;
 }
