@@ -19,13 +19,16 @@ footer{
     opacity: 80%;
 }
 h3{
-    font-size: 40px;
+    font-size: 30px;
 }
 h3:hover{
     color: #2cbc63;
 }
+.card-text{
+    font-size: 15px;
+}
 .borderb{
-    border-top: 3px solid white;
+    border-top: 2px solid white;
 }
 h2{
     font-size: 58px;
@@ -41,4 +44,14 @@ h2{
 }
 .bordertopfooter{
     border-top: 1px solid gray;
+}
+
+@media screen and (max-width: 768px){
+    h3{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 13px;
+    } 
+
 }
