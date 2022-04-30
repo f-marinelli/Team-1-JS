@@ -157,6 +157,17 @@ hr {
   width: 45%;
 }
 
+.hover-green a {
+  color: black;
+}
+.hover-green:hover a {
+  color: green;
+}
+
+.cursore {
+  cursor: pointer;
+}
+
 /* CSS FOOTER */
 footer {
   background-image: url(/imgs/map-ft.png);
