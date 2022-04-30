@@ -5,5 +5,53 @@ nav {
 }
 
 h1{
-    font-size: 60px;
+    font-size: 64px;
+}
+footer{
+    background-color: #023a51;
+}
+.bg-image{
+    background-image: url('/imgs/map-ft.png');
+    background-size: cover;
+}
+.imgopacity{
+    background-color:#023a51;
+    opacity: 80%;
+}
+h3{
+    font-size: 30px;
+}
+h3:hover{
+    color: #2cbc63;
+}
+.card-text{
+    font-size: 15px;
+}
+.borderb{
+    border-top: 2px solid white;
+}
+h2{
+    font-size: 58px;
+}
+.bg-input{
+    background-color: transparent;
+}
+.borderInput{
+    border-bottom: 2px solid #2cbc63;
+}
+.buttonfooter{
+    background-color: transparent;
+}
+.bordertopfooter{
+    border-top: 1px solid gray;
+}
+
+@media screen and (max-width: 768px){
+    h3{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 13px;
+    } 
+
 }
