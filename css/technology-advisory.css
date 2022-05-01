@@ -202,13 +202,18 @@
     .list-unstyled{
         margin-top: 12px;
     }
+    .cards-query{
+        flex-direction: column;
+    }
+}
+@media(min-width:850px) and (max-width:950px) {
+    .cards-query{
+        flex-direction: column;
+    }
 }
 
 
-
-
-
-
+/*FOOTER*/
  footer {
   background-image: url(/imgs/map-ft.png);
   background-color: #023a51;
@@ -248,7 +253,6 @@
 .bPadding {
   padding-left: 0.2vw;
 } 
-
 
 @media(min-width:300px) and (max-width: 750px){
     .grid-footer-query{
