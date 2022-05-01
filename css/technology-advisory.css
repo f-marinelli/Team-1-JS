@@ -139,8 +139,7 @@
     margin: auto;
 }
 .img-third-section{
-    background-image: url("/imgs/img-technology-advisory/img-people-terza-section.jpg");
-    background-color: lightblue;
+    background-image: url("/imgs/img-technology-advisory/img-people.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -183,9 +182,80 @@
 }
 
 /*INIZIO QUARTA SECTION*/
+.hover-green a{
+    color: black;
+}
+
+.hover-green i{
+    color: green;
+}
+
+.hover-green:hover a {
+    color: green;
+}
+
+.hover-green:hover i{
+    color: black;
+}
+
+@media(min-width:300px) and (max-width: 750px){
+    .list-unstyled{
+        margin-top: 12px;
+    }
+}
 
 
 
+
+
+
+ footer {
+  background-image: url(/imgs/map-ft.png);
+  background-color: #023a51;
+}
+
+.modifyUl {
+  list-style-type: none;
+}
+
+.modifyPadding {
+  margin-left: 4vw;
+}
+
+.bordo {
+  border-bottom: 5px solid greenyellow;
+  padding-bottom: 3px;
+}
+
+.modifyMargin {
+  padding-top: 2vw;
+  margin-left: 23vw;
+  margin-right: 27.6vw;
+}
+
+.spanHover:hover {
+  color: whitesmoke;
+}
+
+.pPaddingBottom {
+  padding-bottom: 3vw;
+}
+
+.pPaddingTop {
+  padding-top: 3vw;
+}
+
+.bPadding {
+  padding-left: 0.2vw;
+} 
+
+
+@media(min-width:300px) and (max-width: 750px){
+    .grid-footer-query{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
 
 
 
