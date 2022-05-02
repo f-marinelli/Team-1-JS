@@ -1,4 +1,3 @@
-
 /*NAVBAR*/
 .navbar{
     background-color: #023A51;
@@ -202,13 +201,12 @@
     .list-unstyled{
         margin-top: 12px;
     }
-    .cards-query{
-        flex-direction: column;
-    }
 }
-@media(min-width:850px) and (max-width:950px) {
-    .cards-query{
-        flex-direction: column;
+
+/*INIZIO QUINTA SECTION*/
+@media(min-width:280px) and (max-width:1024px) {
+    .five-section-right img{
+        display: none;
     }
 }
 
@@ -253,13 +251,6 @@
 .bPadding {
   padding-left: 0.2vw;
 } 
-
-@media(min-width:300px) and (max-width: 750px){
-    .grid-footer-query{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-}
 
 
 
