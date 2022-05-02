@@ -168,6 +168,35 @@ hr {
   cursor: pointer;
 }
 
+.bordoQue {
+  border-right: 1px solid grey;
+}
+
+@media only screen and (max-width: 576px) {
+  .bordoQue {
+    border: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bordoQue {
+    border: none;
+  }
+}
+
+.hrQue {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .hrQue {
+    display: block;
+  }
+}
+
+.imgTestimonial {
+  height: 44%;
+}
+
 /* CSS FOOTER */
 footer {
   background-image: url(/imgs/map-ft.png);
