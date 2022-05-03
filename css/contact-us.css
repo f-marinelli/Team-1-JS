@@ -96,3 +96,11 @@ hr{
     align-items: center;
   }
 }
+
+footer{
+  padding: 3% 15%;
+}
+
+.footer-bg {
+  background-color: #023a51;
+}
