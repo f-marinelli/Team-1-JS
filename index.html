@@ -15,731 +15,1714 @@
   </head>
   <body>
     <header>
-      <!-- Prima navbar -->
-      <nav class="navbar navbar-light bg-opacity-25 bg-black">
-        <div class="container">
-          <div class="d-flex">
-            <a class="navbar-brand" href="#">
-              <img
-                src="/imgs/finlablogo.png"
-                alt="finlablogo"
-                width="200"
-                height="36"
-              />
-            </a>
-            <!-- Icone social -->
-            <div class="d-md-block d-none align-self-center d-flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="white"
-                class="bi bi-facebook"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+      <div
+        class="d-flex justify-content-between align-items-center bg-black position-fixed w-100"
+        style="z-index: 999"
+      >
+        <img
+          src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg"
+          alt=""
+          class="imgSize"
+        />
+        <button class="btn btn-success">Buy Now</button>
+      </div>
+      <div class="position-absolute w-100" style="z-index: 999">
+        <!-- Prima navbar -->
+        <nav class="navbar navbar-light bg-opacity-25 bg-black">
+          <div class="container">
+            <div class="d-flex">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="/imgs/finlablogo.png"
+                  alt="finlablogo"
+                  width="200"
+                  height="36"
                 />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="white"
-                class="bi bi-twitter"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16"
-                width="16"
-                viewBox="0 0 48 48"
-              >
+              </a>
+              <!-- Icone social -->
+              <div class="d-md-block d-none align-self-center d-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  viewBox="0 0 48 48"
+                >
                   <path
                     fill="white"
                     d="M38.9,0.3c2.2,1.1,11.1,19.9,3.5,36.4C36.3,49.8,21,49.8,13.2,45.2c-6.6-4-16.7-16.5-5.5-31.8 c0.5-0.6,1.6-0.5,1.4,1.2c-0.2,1.2-1.8,10.2,1.3,14.1c1.4,1.9,1.7,0.6,1.7,0.6s-0.2-13,9.8-22.9C28.3,0.4,37.1-0.6,38.9,0.3z"
                   ></path>
-                </g>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="white"
-                class="bi bi-messenger"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"
-                />
-              </svg>
-            </div>
-          </div>
-          <!-- Inizio bottoni prima navbar -->
-          <div>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-success rounded-pill d-sm-inline-block d-none"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="white"
-                class="bi bi-chat"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"
-                />
-              </svg>
-              Talk an Experts
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form action="#">
-                      <div class="d-flex">
-                        <label for="" class="w-25">I'm an</label>
-                        <select
-                          class="form-select w-75 border-0"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Freelancer/Own Business</option>
-                          <option value="2">Other Options</option>
-                        </select>
-                      </div>
-                      <hr />
-                      <div class="d-flex">
-                        <label for="" class="w-25">i want</label>
-                        <select
-                          class="form-select w-75 border-0"
-                          aria-label="Default select example"
-                        >
-                          <option selected>
-                            Call me to Discuss my Questions
-                          </option>
-                          <option value="1">
-                            Email me your digital prospectus
-                          </option>
-                          <option value="2">
-                            Mail me your full information packs
-                          </option>
-                        </select>
-                      </div>
-                      <hr />
-                      <div class="d-flex">
-                        <label for="" class="w-25">I interested</label>
-                        <select
-                          class="form-select w-75 border-0"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Financial Consultant</option>
-                          <option value="1">Account Services</option>
-                          <option value="2">Tax Services</option>
-                          <option value="3">Carees</option>
-                          <option value="4">
-                            Request Additional Information
-                          </option>
-                        </select>
-                      </div>
-                      <hr />
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label"
-                          >Email address</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="exampleFormControlInput1"
-                          placeholder="name@example.com"
-                          required
-                        />
-                      </div>
-                      <div class="d-flex">
-                        <label for="exampleFormControlInput1" class="form-label"
-                          >Your Name</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="exampleFormControlInput1"
-                          placeholder="Mario Rossi"
-                          required
-                        />
-                        <label for="exampleFormControlInput1" class="form-label"
-                          >Password</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="exampleFormControlInput1"
-                          placeholder="*******"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                          >Message</label
-                        >
-                        <textarea
-                          class="form-control"
-                          id="exampleFormControlTextarea1"
-                          rows="3"
-                          placeholder="Send message"
-                        ></textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer d-flex align-self-start">
-                    <button type="button" class="btn btn-success">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-light me-md-2 rounded-circle d-md-inline-block d-none" type="button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="24"
-                fill="btn-primary"
-                class="bi bi-cart"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-                />
-              </svg>
-            </button>
-            <button class="btn btn-light rounded-circle d-md-inline-block d-none" type="button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="24"
-                fill="btn-primary"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
-            </button>
-            <button
-              class="btn btn-light rounded-circle d-md-none"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-              type="button"
-              height="24"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="24"
-                fill="currentColor"
-                class="bi bi-list"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <!-- contenuto dropdowns -->
-                <div class="dropdown">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    Homepage
-                    <button
-                      class="btn btn-white dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    ></button>
-                    <ul
-                      class="dropdown-menu modifyRight"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Home1</a></li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#">Home2</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <hr />
-                </div>
-                <div class="dropdown">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    Who we are
-                    <button
-                      class="btn btn-white dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    ></button>
-                    <ul
-                      class="dropdown-menu modifyRight"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">About us</a></li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#">Our Leadeship Team</a>
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#">Why Choose Us</a>
-                      </li>
-                      <hr />
-                      <li><a class="dropdown-item" href="#">Our History</a></li>
-                      <hr />
-                      <li><a class="dropdown-item" href="#">Careers</a></li>
-                    </ul>
-                  </div>
-                  <hr />
-                </div>
-                <div class="dropdown">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    What We Do
-                    <button
-                      class="btn btn-white dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    ></button>
-                    <ul
-                      class="dropdown-menu modifyRight"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Accounting Services</a
-                        >
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Audit & Tax Services</a
-                        >
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Capital Investments</a
-                        >
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Finance & Restructuring</a
-                        >
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Financial Consultant</a
-                        >
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Portfolio Management</a
-                        >
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Technology Advisory</a
-                        >
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#">All Services Page</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <hr />
-                </div>
-                <div class="dropdown">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    Case Studies
-                    <button
-                      class="btn btn-white dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    ></button>
-                    <ul
-                      class="dropdown-menu modifyRight"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="#">Cases Grid 1</a>
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#">Cases Grid 2</a>
-                      </li>
-                      <hr />
-                      <li>
-                        <a class="dropdown-item" href="#">Cases Grid 3</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <hr />
-                </div>
-                <div
-                  class="modifyGapAndPadding d-flex justify-content-between flex-column"
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-messenger"
+                  viewBox="0 0 16 16"
                 >
-                  <a href="#" class="apadding">Blog & Insights</a>
+                  <path
+                    d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Inizio bottoni prima navbar -->
+            <div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-success rounded-pill d-sm-inline-block d-none"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-chat"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"
+                  />
+                </svg>
+                Talk an Experts
+              </button>
 
-                  <hr />
-                  <a href="#" class="">Shop</a>
-                  <hr />
-                  <a href="#" class="">Contact Us</a>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="#">
+                        <div class="d-flex">
+                          <label for="" class="w-25">I'm an</label>
+                          <select
+                            class="form-select w-75 border-0"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Freelancer/Own Business</option>
+                            <option value="2">Other Options</option>
+                          </select>
+                        </div>
+                        <hr />
+                        <div class="d-flex">
+                          <label for="" class="w-25">i want</label>
+                          <select
+                            class="form-select w-75 border-0"
+                            aria-label="Default select example"
+                          >
+                            <option selected>
+                              Call me to Discuss my Questions
+                            </option>
+                            <option value="1">
+                              Email me your digital prospectus
+                            </option>
+                            <option value="2">
+                              Mail me your full information packs
+                            </option>
+                          </select>
+                        </div>
+                        <hr />
+                        <div class="d-flex">
+                          <label for="" class="w-25">I interested</label>
+                          <select
+                            class="form-select w-75 border-0"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Financial Consultant</option>
+                            <option value="1">Account Services</option>
+                            <option value="2">Tax Services</option>
+                            <option value="3">Carees</option>
+                            <option value="4">
+                              Request Additional Information
+                            </option>
+                          </select>
+                        </div>
+                        <hr />
+                        <div class="mb-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="name@example.com"
+                            required
+                          />
+                        </div>
+                        <div class="d-flex">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label"
+                            >Your Name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Mario Rossi"
+                            required
+                          />
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="*******"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="exampleFormControlTextarea1"
+                            class="form-label"
+                            >Message</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            placeholder="Send message"
+                          ></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer d-flex align-self-start">
+                      <button type="button" class="btn btn-success">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="btn btn-light me-md-2 rounded-circle d-md-inline-block d-none"
+                type="button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="24"
+                  fill="btn-primary"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn btn-light rounded-circle d-md-inline-block d-none"
+                type="button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="24"
+                  fill="btn-primary"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn btn-light rounded-circle d-md-none"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                type="button"
+                height="24"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- contenuto dropdowns -->
+                  <div class="dropdown">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      Homepage
+                      <button
+                        class="btn btn-white dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></button>
+                      <ul
+                        class="dropdown-menu modifyRight"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Home1</a></li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#">Home2</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="dropdown">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      Who we are
+                      <button
+                        class="btn btn-white dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></button>
+                      <ul
+                        class="dropdown-menu modifyRight"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">About us</a></li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Our Leadeship Team</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#">Why Choose Us</a>
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#">Our History</a>
+                        </li>
+                        <hr />
+                        <li><a class="dropdown-item" href="#">Careers</a></li>
+                      </ul>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="dropdown">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      What We Do
+                      <button
+                        class="btn btn-white dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></button>
+                      <ul
+                        class="dropdown-menu modifyRight"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Accounting Services</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Audit & Tax Services</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Capital Investments</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Finance & Restructuring</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Financial Consultant</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Portfolio Management</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Technology Advisory</a
+                          >
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >All Services Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="dropdown">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      Case Studies
+                      <button
+                        class="btn btn-white dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></button>
+                      <ul
+                        class="dropdown-menu modifyRight"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Cases Grid 1</a>
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#">Cases Grid 2</a>
+                        </li>
+                        <hr />
+                        <li>
+                          <a class="dropdown-item" href="#">Cases Grid 3</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+                  </div>
+                  <div
+                    class="modifyGapAndPadding d-flex justify-content-between flex-column"
+                  >
+                    <a href="#" class="apadding">Blog & Insights</a>
+
+                    <hr />
+                    <a href="#" class="">Shop</a>
+                    <hr />
+                    <a href="#" class="">Contact Us</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-      <hr />
-      <!-- seconda navbar -->
-      <nav
-        class="modifyWidht p-0 navbar navbar-light justify-content-center d-md-flex w-100 d-none bg-opacity-25 bg-black"
-      >
-        <div
-          class="m-0 p-0 container row d-flex justify-content-center align-items-center w-100"
+        </nav>
+        <hr />
+        <!-- seconda navbar -->
+        <nav
+          class="modifyWidht p-0 navbar navbar-light justify-content-center d-md-flex w-100 d-none bg-opacity-25 bg-black"
         >
           <div
-            class="d-flex justify-content-start align-items-center m-0 p-0 w-100 da"
+            class="m-0 p-0 container row d-flex justify-content-center align-items-center w-100"
           >
-            <button
-              class="btn btn-light me-md-2 rounded-circle w-auto"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasExample"
-              aria-controls="offcanvasExample"
+            <div
+              class="d-flex justify-content-start align-items-center m-0 p-0 w-100 da"
             >
+              <button
+                class="btn btn-light me-md-2 rounded-circle w-auto"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <!-- Offcanvas -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body w-100 immagine">
+                  <img src="/imgs/c4-825x550.jpg" alt="palazzi" />
+                  <p class="opacity-50">
+                    Our firm provides the expert support <br />
+                    organisations need to thrive in a fast- <br />
+                    changing world.
+                    <br />
+                  </p>
+                  <p class="opacity-50">
+                    <b>Address:</b> 1270 Beverley Rd Brooklyn, New <br />
+                    York 11226 United States. <br />
+                    <b>Phone:</b>
+                    <span class="text-success spanHover">0712 610 33 181 </span
+                    ><br />
+                    <b>Mail:</b>
+                    <span class="text-success spanHover">info@example.com</span>
+                  </p>
+                </div>
+                <span class="opacity-50">Request a callback</span>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputName1"
+                      aria-describedby="textHelp"
+                      placeholder="Your Name*"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPhoneNumber1"></label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPhoneNumber1"
+                      placeholder="Phone Number*"
+                      required
+                    />
+                  </div>
+                  <button type="button" class="btn btn-success">
+                    Request a CallBack
+                  </button>
+                </form>
+              </div>
+              <!-- end Offcanvas -->
+              <div class="dropdown mx-2 modifyDropdown">
+                <button
+                  class="btn btn-white text-white dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Homepage
+                </button>
+                <hr />
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"> • Home 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Home 2</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown mx-2 modifyHover">
+                <button
+                  class="btn btn-white text-white dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Who we are
+                </button>
+                <hr />
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"> • About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Our Leadership Team</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Why Choose Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Our History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Careers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown mx-2 modifyHover">
+                <button
+                  class="btn btn-white text-white dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  What We Do
+                </button>
+                <hr />
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="#">• Accounting Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Audit & Tax Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Capital Investments</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >• Finance & Restructuring</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Financial Consultant</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Portfolio Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Technology Advisory</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• All Services Page</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown mx-2 modifyHover">
+                <button
+                  class="btn btn-white text-white dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Case Studies
+                </button>
+                <hr />
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">• Cases Grid 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Cases Grid 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">• Cases Grid 3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex ms-2">
+                <div class="modifyHover">
+                  <a href="#" class="mx-2 text-white">Blog & Insights</a>
+                  <a href="#" class="mx-2 text-white">Shop</a>
+                  <a href="#" class="mx-2 text-white">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide indexClass"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/imgs/PersonsInpalace.jpg"
+              class="d-block w-100"
+              alt="ufficio"
+            />
+            <div class="carousel-caption d-md-block modifyPosition">
+              <div class="modifyPosition d-flex flex-column">
+                <h1 class="text-start">
+                  <b
+                    >Providers <br />
+                    Professional <br />
+                    Services
+                  </b>
+                </h1>
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill d-sm-inline-block d-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-circle m-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                    />
+                    <span>Learn How We Can Help</span>
+                  </svg>
+                </button>
+                <span class="d-sm-none d-inline-block"
+                  >Learn How We Can Help</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/scacchi.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block modifyPosition">
+              <div class="modifyPosition d-flex flex-column">
+                <h1 class="text-start">
+                  <b
+                    >Providers <br />
+                    Professional <br />
+                    Services
+                  </b>
+                </h1>
+
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill d-sm-inline-block d-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-circle m-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                    />
+                    <span>Learn How We Can Help</span>
+                  </svg>
+                </button>
+                <span class="d-sm-none d-inline-block"
+                  >Learn How We Can Help</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/bitcoin.jpg" class="d-block w-100" alt="bitcoin" />
+            <div class="carousel-caption d-md-block modifyPosition">
+              <div class="modifyPosition d-flex flex-column">
+                <h1 class="text-start">
+                  <b>
+                    Providers <br />
+                    Professional <br />
+                    Services
+                  </b>
+                </h1>
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill d-sm-inline-block d-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-circle m-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                    />
+                    <span>Learn How We Can Help</span>
+                  </svg>
+                </button>
+                <span class="d-sm-none d-inline-block"
+                  >Learn How We Can Help</span
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <section class="sectionBorder">
+        <div class="pt-5 d-lg-flex d-flex-column justify-content-between">
+          <span class="text-success">• WE HAVE DIRECT IMPACT</span>
+          <h5 class="text-white-50">
+            If you want to know more about how we can support your business,
+            <br />
+            give our friendly team a call.
+          </h5>
+        </div>
+        <div
+          class="d-flex-column d-md-flex justify-content-lg-between flex-wrap mt-5"
+        >
+          <div class="d-flex mb-3 mediaLg">
+            <button class="btn btn-success text-start d-flex flex-column w-50">
+              Explore our
+              <br />
+              Company
               <svg
                 xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="16"
                 fill="currentColor"
-                class="bi bi-list"
+                class="modifySvg bi bi-arrow-up-right"
                 viewBox="0 0 16 16"
-                width="16"
-                height="24"
               >
                 <path
                   fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
                 />
               </svg>
             </button>
-            <!-- Offcanvas -->
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasExample"
-              aria-labelledby="offcanvasExampleLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body w-100 immagine">
-                <img src="/imgs/c4-825x550.jpg" alt="palazzi" />
-                <p class="opacity-50">
-                  Our firm provides the expert support <br>
-                  organisations need to thrive in a fast- <br>
-                  changing world.
-                  <br>
+            <img src="/imgs/i1.jpg" alt="" class="w-50" />
+          </div>
+          <div class="d-flex mb-3 mediaLg">
+            <button class="btn btn-success text-start d-flex flex-column w-50">
+              Explore our
+              <br />
+              Company
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="16"
+                fill="currentColor"
+                class="modifySvg bi bi-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                />
+              </svg>
+            </button>
+            <img src="/imgs/i2.jpg" alt="grattacieli" class="w-50" />
+          </div>
+          <div class="d-flex mb-3 mediaLg">
+            <button class="btn btn-success text-start d-flex flex-column w-50">
+              Explore our
+              <br />
+              Company
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="16"
+                fill="currentColor"
+                class="modifySvg bi bi-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                />
+              </svg>
+            </button>
+            <img src="/imgs/i3.jpg" alt="due uominiEdUnPc" class="w-50" />
+          </div>
+        </div>
+      </section>
+      <div
+        class="d-flex justify-content-center align-items-center modifyDivPadding bg-white"
+      >
+        <h2 class="text-secondary text-center">
+          OUR GOAL IS TO PROTECT YOUR FINANCIAL ASSET AND
+          <span class="text-success">TO MAKE IT GROW</span>
+        </h2>
+      </div>
+      <section class="sectionTwoColor">
+        <div class="divSize">
+          <div class="d-lg-flex d-sm-flex-column justify-content-between">
+            <div class="">
+              <span class="text-success">• SERVICES WE PROVIDE</span>
+              <h1>Trusted</h1>
+              <h1>Commercial</h1>
+              <h1>Finance Broker</h1>
+            </div>
+            <div class="d-sm-flex-column d-md-flex">
+              <div class="d-flex flex-column p-0 p-lg-3">
+                <h1 class="text-success">
+                  435 <span class="text-black">Milion</span>
+                </h1>
+                <hr />
+                <p>
+                  Information on 400+ million <br />
+                  companies worldwide.
                 </p>
-                <p class="opacity-50"><b>Address:</b> 1270 Beverley Rd Brooklyn, New <br> 
-                  York 11226 United States. <br>
-                  <b>Phone:</b> <span class="text-success spanHover">0712 610 33 181  </span><br>
-                  <b>Mail:</b> <span class="text-success spanHover">info@example.com</span>
+              </div>
+              <div class="d-flex flex-column p-0 p-lg-3">
+                <h1 class="text-success">
+                  100 <span class="text-black">Percent</span>
+                </h1>
+                <hr />
+                <p>
+                  Information on 400+ million <br />
+                  companies worldwide.
                 </p>
               </div>
-              <span class="opacity-50">Request a callback</span>
-              <form>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputName1"
-                    aria-describedby="textHelp"
-                    placeholder="Your Name*"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPhoneNumber1"></label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPhoneNumber1"
-                    placeholder="Phone Number*"
-                    required
-                  />
-                </div>
-                <button type="button" class="btn btn-success">
-                  Request a CallBack
-                </button>
-              </form>
             </div>
-            <!-- end Offcanvas -->
-            <div class="dropdown mx-2 modifyDropdown">
-              <button
-                class="btn btn-white text-white dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+          </div>
+          <div class="row py-4">
+            <div class="col-md-4">
+              <div class="d-flex flex-column align-content-center">
+                <img src="/imgs/img4.jpg" alt="" />
+                <h3 class="text-center colorH">ACCOUNTING SERVICES</h3>
+                <span class="text-center text-black-50"
+                  >We’ll match you with an advisor</span
+                >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column align-content-center">
+                <img src="/imgs/img5.jpg" alt="" />
+                <h3 class="text-center colorH">ACCOUNTING SERVICES</h3>
+                <span class="text-center text-black-50"
+                  >We’ll match you with an advisor</span
+                >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column align-content-center">
+                <img src="/imgs/img6.jpg" alt="" />
+                <h3 class="text-center colorH">ACCOUNTING SERVICES</h3>
+                <span class="text-center text-black-50"
+                  >We’ll match you with an advisor</span
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div
+          class="d-lg-flex d-sm-flex-column py-5 gap-3 justify-content-center divSize"
+        >
+          <div
+            class="d-lg-flex justify-content-between d-md-flex d-sm-flex-column"
+          >
+            <div class="bg-white d-flex flex-column align-items-center divW">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="50"
+                fill="currentColor"
+                class="w-25 bi bi-piggy-bank"
+                viewBox="0 0 16 16"
               >
-               Homepage
-              </button>
-              <hr />
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#"> • Home 1</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">• Home 2</a>
-                </li>
-              </ul>
+                <path
+                  d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"
+                />
+              </svg>
+              <h5 class="text-center">Technology Advisory</h5>
             </div>
-            <div class="dropdown mx-2  modifyHover">
-              <button
-                class="btn btn-white text-white dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <div class="bg-white d-flex flex-column align-items-center divW">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="50"
+                fill="currentColor"
+                class="w-25 bi-piggy-bank"
+                viewBox="0 0 16 16"
               >
-                Who we are
-              </button>
-              <hr />
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#"> • About Us</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">• Our Leadership Team</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• Why Choose Us</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• Our History</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• Careers</a>
-                </li>
-
-              </ul>
+                <path
+                  d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"
+                />
+              </svg>
+              <h5 class="text-center">Capital Investments</h5>
             </div>
-            <div class="dropdown mx-2 modifyHover">
-              <button
-                class="btn btn-white text-white dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <div class="bg-white d-flex flex-column align-items-center divW">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="50"
+                fill="currentColor"
+                class="w-25 bi bi-piggy-bank"
+                viewBox="0 0 16 16"
               >
-                What We Do
-              </button>
-              <hr />
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">• Accounting Services</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">• Audit & Tax Services</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• Capital Investments</a>
-                </li>
-                <li><a class="dropdown-item" href="#">• Finance & Restructuring</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">• Financial Consultant</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• Portfolio Management</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• Technology Advisory</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• All Services Page</a>
-                </li>
-              </ul>
+                <path
+                  d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"
+                />
+              </svg>
+              <h5 class="text-center">Finance & Restructuring</h5>
             </div>
-            <div class="dropdown mx-2 modifyHover">
-              <button
-                class="btn btn-white text-white dropdown-toggle "
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+          </div>
+          <div
+            class="d-lg-flex d-sm-flex-column justify-content-between pt-lg-0 pt-sm-2"
+          >
+            <div class="bg-white d-flex flex-column align-items-center divW2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="50"
+                fill="currentColor"
+                class="w-25 bi bi-piggy-bank"
+                viewBox="0 0 16 16"
               >
-                Case Studies
-              </button>
-              <hr />
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item " href="#">• Cases Grid 1</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">• Cases Grid 2</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">• Cases Grid 3</a>
-                </li>
-              </ul>
+                <path
+                  d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"
+                />
+              </svg>
+              <h5 class="text-center">Portfolio Management</h5>
             </div>
-            <div class="d-flex ms-2">
-              <div class="modifyHover">
-                <a href="#" class="mx-2 text-white ">Blog & Insights</a>
-                <a href="#" class="mx-2 text-white ">Shop</a>
-                <a href="#" class="mx-2 text-white ">Contact Us</a>
+            <div class="bg-white d-flex flex-column align-items-center divW2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="50"
+                fill="currentColor"
+                class="w-25 bi bi-piggy-bank"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"
+                />
+              </svg>
+              <h5 class="text-center">Audit & Tax Services</h5>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center pb-5">
+          <div>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="45"
+                fill="currentColor"
+                class="bi bi-plus-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                />
+              </svg>
+            </a>
+            <span class="ms-2">View All Services</span>
+          </div>
+        </div>
+      </section>
+      <!-- section Industries we serve-->
+      <section class="bg-white">
+        <div class="divSize">
+          <div class="container">
+            <div class="row gap-md-0 gap-sm-5">
+              <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                <span class="text-success"> • INDUSTRIES WE SERVE </span>
+                <h1>
+                  Broad Knowledge <br />
+                  Base. Deep Insights.
+                </h1>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <hr class="mt-5" />
+                <ul
+                  class="list-unstyled d-flex flex-column align-items-start gap-3 pt-4"
+                >
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span>Automotive / Aviation</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span>Manufacturing & Industrial</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <a class="text-decoration-none" href="#">
+                      <span>Real Estate</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <a class="text-decoration-none" href="#">
+                      <span>Media & Entertainment</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span>Social & Public Sector</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <hr class="mt-5" />
+                <ul
+                  class="list-unstyled d-flex flex-column align-items-start gap-3 pt-4"
+                >
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span> Retail & Ecommerce</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span>Human Resources</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span>Medical & Healthcare</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span>Banking / Finance</span>
+                    </a>
+                  </li>
+                  <li class="hover-green">
+                    <a class="text-decoration-none" href="#">
+                      <span>Machinery & Equipment</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-
+        <div class="container d-flex flex-column flex-sm-row d-md-grid">
+          <div class="row mt-lg-3">
+            <div class="col-md-4">
+              <img
+                src="/imgs/weserveimg1.jpg"
+                style="max-width: 20vw"
+                ;
+                alt=""
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/imgs/weserveimg2.jpg"
+                style="max-width: 20vw"
+                ;
+                alt=""
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/imgs/c4-825x550.jpg"
+                style="max-width: 20vw"
+                ;
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row mt-lg-3">
+            <div class="col-md-4">
+              <img
+                src="/imgs/weserveimg4.jpg"
+                style="max-width: 20vw"
+                ;
+                alt=""
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/imgs/weserveimg4.jpg"
+                style="max-width: 20vw"
+                ,
+                alt=""
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/imgs/weserveimg6.jpg"
+                style="max-width: 20vw"
+                ;
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <h2 class="text-center py-5">
+          LEARN MORE BY READING SOME OF OUR
+          <span class="cursore text-success">CLIENT RESULTS</span> STORIES.
+        </h2>
+        <hr />
+        <h1 class="text-center py-4">
+          <b
+            >Why choose us to be your <br />
+            Financial Advisors?</b
+          >
+        </h1>
+        <h5 class="text-center text-black-50">
+          We help you to secure a stable and fulfilling financial future
+        </h5>
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-4 bordoQue">
+              <h2 class="text-black-50">01.</h2>
+              <h3 class="text-success">Experienced.</h3>
+              <br />
+              <p class="text-black-50">
+                Having lived many “Financial Lives” we <br />
+                know what works and what doesn’t.<br />
+                Experience is priceless in a financial <br />
+                arena dominated by investors and <br />
+                advisors who have never seen a <br />
+                recession or a “bear” market
+              </p>
+            </div>
+            <hr class="hrQue" />
+            <div class="col-md-4 bordoQue">
+              <h2 class="text-black-50 px-lg-5">01.</h2>
+              <h3 class="text-success px-lg-5">Experienced.</h3>
+              <br />
+              <p class="text-black-50 px-lg-5">
+                Having lived many “Financial Lives” we <br />
+                know what works and what doesn’t.<br />
+                Experience is priceless in a financial <br />
+                arena dominated by investors and <br />
+                advisors who have never seen a <br />
+                recession or a “bear” market
+              </p>
+            </div>
+            <hr class="hrQue" />
+            <div class="col-md-4 ps-lg-5">
+              <h2 class="text-black-50 ps-lg-3">01.</h2>
+              <h3 class="text-success ps-lg-3">Experienced.</h3>
+              <br />
+              <p class="text-black-50 ps-lg-3">
+                Having lived many “Financial Lives” we <br />
+                know what works and what doesn’t.<br />
+                Experience is priceless in a financial <br />
+                arena dominated by investors and <br />
+                advisors who have never seen a <br />
+                recession or a “bear” market
+              </p>
+            </div>
+            <hr class="hrQue" />
+          </div>
+        </div>
+        <p class="text-center py-5">
+          Remember that our team is always just a phone call away. Toll Free:
+          <b>0712 610 33 181</b>
+        </p>
+        <hr />
+      </section>
+      <!-- Fine Section Industries we serve -->
+      <section class="sectionTwoColor">
+        <div class="divSize">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="/imgs/finimg.png" alt="" />
+              </div>
+              <div class="col-md-6">
+                <span class="text-success">• OUR PEOPLE</span>
+                <h1>
+                  Meet the <br />
+                  Executive Team
+                </h1>
+                <div class="row">
+                  <div class="col-md-6">
+                    <span class="text-black-50">Defined by our People.</span>
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      We make a sustainable contribution to <br />
+                      the world and the people around us.
+                    </p>
+                  </div>
+                </div>
+                <div class="row py-5">
+                  <div class="col-md-6">
+                    <span class="text-black-50"
+                      >With an Extraordinary range.</span
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Sharing a common set of values and <br />
+                      investment approach.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <span class="text-black-50"
+                      >Based on Strength of Client</span
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Best environment to nurture your <br />
+                      skills & help you grow.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-5">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="45"
+                      height="45"
+                      fill="currentColor"
+                      class="bi bi-plus-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
+                      <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </a>
+                  <span class="ms-3">Learn How We Can Help</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="py-2 colorH" />
+        </div>
+      </section>
+      <!--Section testimonials  -->
+      <div class="bg-white">
+        <div class="d-flex justify-content-between divSize">
+          <span class="text-success pt-4"
+            >• Bold ideas and Extraordinary teams
+          </span>
+          <span class="text-black-50 pt-4">Get to know our Experts </span>
+        </div>
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-lg-4 d-flex-column">
+              <img src="/imgs/Bitmap2.jpg" alt="" class="w-75 ms-5" />
+              <h3 class="text-center colorH">LARRY SWANK</h3>
+              <h5 class="text-center">We’ll match you with an advisor</h5>
+            </div>
+            <div class="col-lg-4 d-flex-column">
+              <img src="/imgs/Bitmap1.jpg" alt="" class="w-75 ms-5" />
+              <h3 class="text-center colorH">LARRY SWANK</h3>
+              <h5 class="text-center">We’ll match you with an advisor</h5>
+            </div>
+            <div class="col-lg-4 d-flex-column">
+              <img src="/imgs/Bitmap3.jpg" alt="" class="w-75 ms-5" />
+              <h3 class="text-center colorH">LARRY SWANK</h3>
+              <h5 class="text-center">We’ll match you with an advisor</h5>
+            </div>
+          </div>
+        </div>
+        <section
+          class="d-flex bg-white flex-column align-items-center container my-5"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="green"
+            class="bi bi-quote mb-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+            />
+          </svg>
+          <h5 class="w-75 text-center mb-4">
+            "Your company has provided consistent, high quality, accounting
+            support during the exponential growth we have experienced over the
+            past two years"
+          </h5>
+          <span class="badge bg-light text-dark py-1 px-3 mb-5"
+            >JOHN DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS</span
+          >
+          <div class="w-100 position-relative mb-5">
+            <img src="imgs/img-people.jpg" class="img-fluid" alt="" />
+            <img
+              src="imgs/img-persona-terza-section.jpg"
+              class="position-absolute top-0 start-50 translate-middle-x rounded-circle imgTestimonial"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="container pb-5">
+          <div class="row">
+            <div class="col col-12 d-flex justify-content-between pb-4">
+              <span class="text-success"
+                >• FROM OUR BLOG - FINANCE NEWS AND GUIDELINES</span
+              >
+              <p class="text-black-50">See More All Post</p>
+            </div>
+            <div
+              class="col col-12 col-md-3 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex flex-column">
+                <img
+                  src="https://fin.21lab.co/wp-content/uploads/2021/09/b7.jpg"
+                  class="img-fluid w-100"
+                  alt=""
+                />
+                <h5 class="colorH">
+                  Hot To Get Back On Track With Your Finance
+                </h5>
+                <p class="text-black-50 pt-4">
+                  Posted by <strong>21lab.com</strong> - Sep 22,2021
+                </p>
+              </div>
+              <div class="d-flex flex-column">
+                <img
+                  src="https://fin.21lab.co/wp-content/uploads/2021/09/b6.jpg"
+                  class="img-fluid w-100"
+                  alt=""
+                />
+                <h5 class="colorH">
+                  What is Bitcoin, How to Buy & How Transaction Works
+                </h5>
+                <p class="text-black-50 pt-4">
+                  Posted by <strong>21lab.com</strong> - Sep 22,2021
+                </p>
+              </div>
+            </div>
+            <div class="col col-6 d-md-block d-none h-100">
+              <img
+                src="https://fin.21lab.co/wp-content/uploads/elementor/thumbs/c2-pdhc5hzibdaonk8z8xbsw1rwy2ayy2gzvb77rk7rus.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col col-12 col-md-3 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex flex-column">
+                <img
+                  src="https://fin.21lab.co/wp-content/uploads/2021/09/b5.jpg"
+                  class="img-fluid w-100 pt-4"
+                  alt=""
+                />
+                <h5 class="colorH">
+                  9 Types Of Insurance You Need But May Not Have
+                </h5>
+                <p class="text-black-50 pt-4">
+                  Posted by <strong>21lab.com</strong> - Sep 22,2021
+                </p>
+              </div>
+              <div class="d-flex flex-column">
+                <img
+                  src="https://fin.21lab.co/wp-content/uploads/2021/09/b4.jpg"
+                  class="img-fluid w-100 pt-4"
+                  alt=""
+                />
+                <h5 class="colorH">
+                  6 Things To Do Now If You Have No Savings
+                </h5>
+                <p class="text-black-50 pt-4">
+                  Posted by <strong>21lab.com</strong> - Sep 22,2021
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="container py-5 border-top">
+          <div class="d-flex justify-content-between pb-4">
+            <span class="text-success"
+              >• FROM OUR BLOG - FINANCE NEWS AND GUIDELINES</span
+            >
+            <p class="text-black-50">See More All Post</p>
+          </div>
+          <div class="d-flex flex-md-row flex-column w-100">
+            <div class="">
+              <img
+                src="https://fin.21lab.co/wp-content/uploads/2021/09/l6.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://fin.21lab.co/wp-content/uploads/2021/09/l1.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://fin.21lab.co/wp-content/uploads/2021/09/l2.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div>
+              <img
+                src="https://fin.21lab.co/wp-content/uploads/2021/09/l3.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://fin.21lab.co/wp-content/uploads/2021/09/l4.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-      <section class="d-flex flex-column justify-content-center align-items-center">
-        <h1 class="text-center text-white">Your Future in<br>
-        Finance Starts Here</h1>
-        <br>
+      <section
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="text-center text-white">
+          Your Future in<br />
+          Finance Starts Here
+        </h1>
+        <br />
         <p class="pt-3 text-center text-white-50">
-          Learn more about our commercial loan broker training <br>
-          program & join our family of over 700 successful <br>
+          Learn more about our commercial loan broker training <br />
+          program & join our family of over 700 successful <br />
           entrepreneurs.
         </p>
-        <br>
-        <button class="btn btn-success ">Get My Free Proposal</button>
+        <br />
+        <button class="btn btn-success">Get My Free Proposal</button>
 
-        <div class="pt-3"><span class="text-white opacity-25">Or call us now at  </span><span class="text-white ">0712 610 33 181</span></div>
+        <div class="pt-3">
+          <span class="text-white opacity-25">Or call us now at </span
+          ><span class="text-white">0712 610 33 181</span>
+        </div>
       </section>
       <section class="d-lg-flex justify-content-center pt-5">
         <div class="d-flex flex-wrap">
-
           <ul class="modifyUl">
-            <li class="text-white pb-2"><span class="spanHover">Follow us</span></li>
-            <li class="text-white-50"><span class="spanHover">Facebook</span></li>
-            <li class="text-white-50"><span class="spanHover">Twitter</span></li>
-            <li class="text-white-50"> <span class="spanHover">Instagram</span> </li>
-            <li class="text-white-50"> <span class="spanHover">linkedin</span> </li>
+            <li class="text-white pb-2">
+              <span class="spanHover">Follow us</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">Facebook</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">Twitter</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">Instagram</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">linkedin</span>
+            </li>
           </ul>
           <ul class="modifyUl">
-            <li class="text-white pb-2"> <span class="spanHover">Company</span> </li>
-            <li class="text-white-50"> <span class="spanHover">About Us</span> </li>
-            <li class="text-white-50"> <span class="spanHover">Our People</span> </li>
-            <li class="text-white-50"> <span class="spanHover">Blog & Insights</span> </li>
-            <li class="text-white-50"> <span class="spanHover">Contact Us</span> </li>
+            <li class="text-white pb-2">
+              <span class="spanHover">Company</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">About Us</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">Our People</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">Blog & Insights</span>
+            </li>
+            <li class="text-white-50">
+              <span class="spanHover">Contact Us</span>
+            </li>
           </ul>
           <div class="d-flex">
-
             <ul class="modifyUl">
-              <li class="text-white pb-2"> <span class="spanHover">Services</span> </li>
-              <li class="text-white-50"> <span class="spanHover">Accounting</span>  </li>
-              <li class="text-white-50"> <span class="spanHover">Financial</span></li>
-              <li class="text-white-50"> <span class="spanHover">Investments</span> </li>
-              <li class="text-white-50"><span class="spanHover">Tax & Audit</span> </li>
+              <li class="text-white pb-2">
+                <span class="spanHover">Services</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Accounting</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Financial</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Investments</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Tax & Audit</span>
+              </li>
             </ul>
             <ul class="modifyUl">
-              <li class="text-white pb-2"> <span class="spanHover">Industries</span> </li>
-              <li class="text-white-50"> <span class="spanHover">Automotive</span> </li>
-              <li class="text-white-50"> <span class="spanHover">Banking</span> </li>
-              <li class="text-white-50"> <span class="spanHover">Insurance</span> </li>
-              <li class="text-white-50"> <span class="spanHover">Healthcare</span> </li>
+              <li class="text-white pb-2">
+                <span class="spanHover">Industries</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Automotive</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Banking</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Insurance</span>
+              </li>
+              <li class="text-white-50">
+                <span class="spanHover">Healthcare</span>
+              </li>
             </ul>
           </div>
         </div>
-<div class="modifyPadding bordo">
-
-  <p class="text-white-50">By providing your e-mail address, you are <br>
-    consenting to receive press releases, <br>
-    presentations and other information <br>
-    concerning FinLab.
-  </p>
-  <input type="email" placeholder="Your email address" required>
-  <button class="rounded-circle">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle m-2" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-    </svg>
-  </button>
-</div>
-</section>
-<div class="d-lg-block  modifyMargin">
-  <p class="text-white-50 pPaddingBottom"> Adddress: 1270 beverley Rd Brooklyn, New York 11226 United States. 
-    <br> 
-    Phone: <span class="text-white-50"><b class="spanHover">0712 610 33 181</b></span>  | Mail: <span class="text-white-50"><b class="spanHover">info@example.com</b> </span> </p>
-    <hr>
-<p class="d-lg-flex justify-content-center text-white-50 pPaddingTop">Copyright © 2021 LineThemes.Designed and Developed by <b class="spanHover bPadding">LineThemes</b>  only on<b class="spanHover bPadding">Envato Market</b>.</p>
-
-</div>
-
+        <div class="modifyPadding bordo">
+          <p class="text-white-50">
+            By providing your e-mail address, you are <br />
+            consenting to receive press releases, <br />
+            presentations and other information <br />
+            concerning FinLab.
+          </p>
+          <input type="email" placeholder="Your email address" required />
+          <button class="rounded-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right-circle m-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <div class="d-lg-block modifyMargin">
+        <p class="text-white-50 pPaddingBottom">
+          Adddress: 1270 beverley Rd Brooklyn, New York 11226 United States.
+          <br />
+          Phone:
+          <span class="text-white-50"
+            ><b class="spanHover">0712 610 33 181</b></span
+          >
+          | Mail:
+          <span class="text-white-50"
+            ><b class="spanHover">info@example.com</b>
+          </span>
+        </p>
+        <hr />
+        <p class="d-lg-flex justify-content-center text-white-50 pPaddingTop">
+          Copyright © 2021 LineThemes.Designed and Developed by
+          <b class="spanHover bPadding">LineThemes</b> only on<b
+            class="spanHover bPadding"
+            >Envato Market</b
+          >.
+        </p>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
