@@ -46,12 +46,32 @@ h2{
     border-top: 1px solid gray;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 992px){
     h3{
         font-size: 25px;
     }
     .card-text{
         font-size: 13px;
     } 
+    .bi-arrow-right-circle{
+        width: 30px;
+        height: 30px;
+    }
 
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    h3{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .span{
+        font-size: 10px;
+    }
+    .iconmain{
+        width: 30px;
+        height: 30px;
+    }
 }
