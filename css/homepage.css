@@ -9,6 +9,10 @@ body {
 }
 /* CSS HEADER */
 
+.imgSize {
+  width: 10%;
+}
+
 .modal-backdrop {
   z-index: 0;
 }
