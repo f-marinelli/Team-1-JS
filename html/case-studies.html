@@ -207,15 +207,20 @@
           <form action="">
             <label class="text-secondary" for="name">Your Name*</label>
             <input class="form-control form-control-lg-md" type="text" placeholder="Eg. John Doe" id="name" required>
-            <div class="d-flex flex-row justify-content-around mt-3 w-50">
-              <label class="text-secondary d-flex flex-column" for="email">Email*
-                <input class="form-control-md form-control-lg w-100" type="email" placeholder="name@company.com"
-                  id="email" required>
-              </label>
-              <label class="text-secondary d-flex flex-column" for="psw">Phone Number
-                <input class="form-control-md form-control-lg w-100" type="tel" placeholder="Full Number (incl.prefix)"
-                  id="psw" required>
-              </label>
+            <div class=" row d-flex flex-row justify-content-around mt-3">
+              <div class="col">
+                <label class="text-secondary d-flex flex-column" for="email">Email*
+                  <input class="form-control-md form-control-lg w-100" type="email" placeholder="name@company.com"
+                    id="email" required>
+                </label>
+              </div>
+              <div class="col">
+                <label class="text-secondary d-flex flex-column" for="psw">Phone Number
+                  <input class="form-control-md form-control-lg w-100" type="tel" placeholder="Full Number (incl.prefix)"
+                    id="psw" required>
+                </label>
+
+              </div>
             </div>
             <div class="form-group mt-3">
               <label for="message-text" class="col-form-label">Message:</label>
@@ -341,11 +346,11 @@
     <div class="mt-5 container">
       <!--lista-->
       <ul class="d-flex flex-wrap justify-content-center gap-5 p-2">
-        <li class="list-unstyled"><a class="text-decoration-none link-success">Show All</a></li>
-        <li class="list-unstyled"><a class="text-decoration-none link-secondary">Cash Flow</a></li>
-        <li class="list-unstyled"><a class="text-decoration-none link-secondary">Services</a></li>
-        <li class="list-unstyled"><a class="text-decoration-none link-secondary">Invoicing</a></li>
-        <li class="list-unstyled"><a class="text-decoration-none link-secondary">Crypto</a></li>
+        <li class="list-unstyled fs-5"><a class="text-decoration-none link-success">Show All</a></li>
+        <li class="list-unstyled fs-5"><a class="text-decoration-none link-secondary">Cash Flow</a></li>
+        <li class="list-unstyled fs-5"><a class="text-decoration-none link-secondary">Services</a></li>
+        <li class="list-unstyled fs-5"><a class="text-decoration-none link-secondary">Invoicing</a></li>
+        <li class="list-unstyled fs-5"><a class="text-decoration-none link-secondary">Crypto</a></li>
       </ul>
 
 
@@ -353,17 +358,17 @@
       <!--riga 1-->
       <div class="row d-flex justify-content-center gap-5 mb-5 mt-5">
         <!--card 1 column-->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-5">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
           <div class="card text-white">
             <img src="/imgs/c6-585x585.jpg" class="card-img" alt="...">
             <div class="card-img-overlay imgopacity d-flex flex-column justify-content-between p-3">
               <div class="d-flex justify-content-between align-items-center borderb">
                 <div>
-                  <h3 class="card-title">Consulting Firm<br>
+                  <h3 class="card-title mb-0">Consulting Firm<br>
                     Grows Client<br>
                     Roster by 29%
                   </h3>
-                  <span>Cash Flow</span>
+                  <span class="span">Cash Flow</span>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
                   class="bi bi-arrow-right-circle d-md-block d-none" viewBox="0 0 16 16">
@@ -376,7 +381,7 @@
                   improve their sales proce
                 </p>
                 <?xml version="1.0" encoding="UTF-8"?>
-                <svg class="" width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                <svg class="iconmain" width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>Group</title>
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -400,16 +405,16 @@
 
 
         <!--card 2 column-->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-5">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
           <div class="card text-white">
             <img src="/imgs/c5-585x585.jpg" class="card-img" alt="...">
             <div class="card-img-overlay imgopacity d-flex flex-column justify-content-between p-3">
               <div class="d-flex flex-row justify-content-between align-items-center borderb">
                 <div>
-                  <h3 class="card-title">Management<br>
+                  <h3 class="card-title mb-0">Management<br>
                     Of Foreign<br>
                     Exchange Risk</h3>
-                  <span>Services</span>
+                  <span class="span">Services</span>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
                   class="bi bi-arrow-right-circle d-md-block d-none" viewBox="0 0 16 16">
@@ -449,18 +454,18 @@
       <!--riga 2-->
       <div class="row d-flex justify-content-center mb-5 gap-5">
         <!--card 3 column-->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-5">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
           <div class="card text-white">
             <img src="/imgs/c4-585x585.jpg" class="card-img" alt="...">
             <div class="card-img-overlay imgopacity d-flex flex-column justify-content-between p-3">
               <div class="d-flex justify-content-between align-items-center borderb">
                 <div>
-                  <h3 class="card-title">Corporate Tax<br>
+                  <h3 class="card-title mb-0">Corporate Tax<br>
                     Policy And<br>
                     Incorporation<br>
                     In The EU
                   </h3>
-                  <span>Invoicing</span>
+                  <span class="span">Invoicing</span>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
                   class="bi bi-arrow-right-circle d-md-block d-none" viewBox="0 0 16 16">
@@ -491,18 +496,18 @@
         </div>
 
         <!--card 4 column-->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-5">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
           <div class="card text-white">
             <img src="/imgs/c3-585x585.jpg" class="card-img" alt="...">
             <div class="card-img-overlay imgopacity d-flex flex-column justify-content-between p-3">
               <div class="d-flex justify-content-between align-items-center borderb">
                 <div>
-                  <h3 class="card-title">Managing Cash<br>
+                  <h3 class="card-title mb-0">Managing Cash<br>
                     Flow in a<br>
                     Seasonal<br>
                     Business
                   </h3>
-                  <span>Cash Flow</span>
+                  <span class="span">Cash Flow</span>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
                   class="bi bi-arrow-right-circle d-md-block d-none" viewBox="0 0 16 16">
@@ -549,19 +554,19 @@
       <!--riga 3-->
       <div class="row d-flex justify-content-center gap-5 mb-5">
         <!--card 5 column-->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-5">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
           <div class="card text-white">
             <img src="/imgs/c2-585x585.jpg" class="card-img" alt="...">
             <div class="card-img-overlay imgopacity d-flex flex-column justify-content-between p-3">
               <div class="d-flex justify-content-between align-items-center borderb">
                 <div>
-                  <h3 class="card-title">Grows<br>
+                  <h3 class="card-title mb-0">Grows<br>
                     Strategic<br>
                     Accounts by<br>
                     110% Year-<br>
                     Over-Year
                   </h3>
-                  <span>Crypto</span>
+                  <span class="span">Crypto</span>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
                   class="bi bi-arrow-right-circle d-md-block d-none" viewBox="0 0 16 16">
@@ -599,19 +604,19 @@
 
 
         <!--card 6 column-->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-5">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
           <div class="card text-white">
             <img src="/imgs/c1-585x585.jpg" class="card-img" alt="...">
             <div class="card-img-overlay imgopacity d-flex flex-column justify-content-between p-3">
               <div class="d-flex justify-content-between align-items-center borderb">
                 <div>
-                  <h3 class="card-title">Global<br>
+                  <h3 class="card-title mb-0">Global<br>
                     Expansion<br>
                     Strategy<br>
                     Guides<br>
                     Financial Firm
                   </h3>
-                  <span>Services</span>
+                  <span class="span">Services</span>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
                   class="bi bi-arrow-right-circle d-md-block d-none" viewBox="0 0 16 16">
