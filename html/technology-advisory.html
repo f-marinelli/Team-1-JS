@@ -16,8 +16,25 @@
 </head>
 
 <body>
+  <header>
+    <div
+    class="p-2 d-flex justify-content-between align-items-center bg-black position-fixed w-100 top-0"
+    style="z-index: 999"
+  >
+    <img
+      src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg"
+      alt=""
+      class="imgSize"
+    />
+    <button class="btn btn-success">Buy Now</button>
+  </div>
+  <div
+    class="position-absolute w-100 top-0"
+    style="z-index: 998; margin-top: 54px"
+  >
+  </header>
   <!--INIZIO NAVBAR-->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg" style="margin-top: 54px">
     <div class="container-nav container-fluid">
       <div class="img-logo">
         <img src="/imgs/img-technology-advisory/logo-nav.png" alt="" />
@@ -523,7 +540,39 @@
     </section>
 
     <!--TERZA SECTION-->
-    <section class="third-section bg-light">
+    <section
+          class="d-flex bg-white flex-column align-items-center container my-5"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="green"
+            class="bi bi-quote mb-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+            />
+          </svg>
+          <h5 class="w-75 text-center mb-4">
+            "Your company has provided consistent, high quality, accounting
+            support during the exponential growth we have experienced over the
+            past two years"
+          </h5>
+          <span class="badge bg-light text-dark py-1 mb-5"
+            >JOHN DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS</span
+          >
+          <div class="w-100 position-relative mb-5">
+            <img src="/imgs/img-technology-advisory/img-people.jpg" class="img-fluid" alt="" />
+            <img
+              src="/imgs/img-technology-advisory/img-persona-terza-section.jpg"
+              class="position-absolute top-0 start-50 translate-middle-x rounded-circle imgTestimonial" style="height: 44%;"
+              alt=""
+            />
+          </div>
+        </section> 
+    <!-- <section class="third-section bg-light">
       <div class="text-third-section">
         <figure class="text-center">
           <i class="bi bi-quote" style="font-size: 30px; color: green"></i>
@@ -543,7 +592,7 @@
           <img class="third-foto-section" src="/imgs/img-technology-advisory/img-persona-terza-section.jpg" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
     <hr>
     <!--QUARTA SECTION-->
     <section class="fourth-section">
@@ -756,8 +805,8 @@
           </div>
         </div>
 
-        <div class="col-lg-6 five-section-right">
-          <img src="/imgs/img-technology-advisory/img-form-five-section.jpg" alt="">
+        <div class="col-lg-6 five-section-right ">
+          <img class="w-100 h-100" src="/imgs/img-technology-advisory/img-form-five-section.jpg" alt="">
         </div>
 
       </div>

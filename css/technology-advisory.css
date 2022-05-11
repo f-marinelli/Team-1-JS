@@ -1,4 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*NAVBAR*/
+.imgSize {
+    width: 10%;
+  }
+
 .navbar{
     background-color: #023A51;
 }
@@ -137,22 +147,7 @@
     width: 80%;
     margin: auto;
 }
-.img-third-section{
-    background-image: url("/imgs/img-technology-advisory/img-people.jpg");
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 300px;
-    position: relative;
-}
-.third-foto-section{
-    width: 120px;
-    border-radius: 50%;
-    position: absolute;
-    left: calc(50% - 120px);
-    right: calc(50% - 120px);
-    margin: auto;
-}
+
 
 .blockquote-footer{
     border-radius: 10px;
@@ -204,7 +199,7 @@
 }
 
 /*INIZIO QUINTA SECTION*/
-@media(min-width:280px) and (max-width:1024px) {
+@media(min-width:51px) and (max-width:1024px) {
     .five-section-right img{
         display: none;
     }
