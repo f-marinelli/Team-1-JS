@@ -241,3 +241,9 @@ footer {
 .bPadding {
   padding-left: 0.2vw;
 }
+
+.img-car {
+  width: 19%;
+  margin-right: 0.5%;
+  border: 1px solid gray;
+}
