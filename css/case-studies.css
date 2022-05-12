@@ -1,0 +1,77 @@
+nav {
+    background-color: #023a51;
+    background-image: url('/imgs/bg-ttb.svg');
+    background-size: cover;
+}
+
+h1{
+    font-size: 64px;
+}
+footer{
+    background-color: #023a51;
+}
+.bg-image{
+    background-image: url('/imgs/map-ft.png');
+    background-size: cover;
+}
+.imgopacity{
+    background-color:#023a51;
+    opacity: 80%;
+}
+h3{
+    font-size: 30px;
+}
+h3:hover{
+    color: #2cbc63;
+}
+.card-text{
+    font-size: 15px;
+}
+.borderb{
+    border-top: 2px solid white;
+}
+h2{
+    font-size: 58px;
+}
+.bg-input{
+    background-color: transparent;
+}
+.borderInput{
+    border-bottom: 2px solid #2cbc63;
+}
+.buttonfooter{
+    background-color: transparent;
+}
+.bordertopfooter{
+    border-top: 1px solid gray;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    h3{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 13px;
+    } 
+    .bi-arrow-right-circle{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    h3{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .span{
+        font-size: 10px;
+    }
+    .iconmain{
+        width: 30px;
+        height: 30px;
+    }
+}
