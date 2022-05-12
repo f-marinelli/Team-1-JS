@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/shop.css" />
+    <script src="../js/shop.js" defer></script>
+    <script src="../js/index.js" defer></script>
+
+    <title>Finlab - Shop</title>
+  </head>
+  <body>
+    <!-- test -->
+    <header>
+      <!-- Nav Envato-->
+      <nav class="navbar navbar-light fixed-top p-2 bg-dark">
+        <div class="container-fluid">
+          <img
+            class="img-nav"
+            src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg"
+            alt=""
+          />
+          <button type="button" class="btn btn-success">Success</button>
+        </div>
+      </nav>
+
+      <!-- Nav Finlab -->
+      <div class="container-fluid nav-background mar-nav-fix">
+        <div class="row">
+          <nav class="navbar nav-background-tr p-0">
+            <!-- Nav Top -->
+            <div
+              class="container-fluid justify-content-beetwen align-items-center py-2 px-5"
+            >
+              <!-- Finlab Logo -->
+              <a class="navbar-brand" href="#"
+                ><img
+                  src="https://fin.21lab.co/wp-content/themes/finlab/assets/img/logo.png"
+                  srcset="
+                    https://fin.21lab.co/wp-content/themes/finlab/assets/img/logo.png    1x,
+                    https://fin.21lab.co/wp-content/themes/finlab/assets/img/logo@2x.png 2x
+                  "
+                  alt="FinLab"
+                  class="logo logoDefault"
+              /></a>
+              <!-- Icons -->
+              <div
+                class="d-md-flex d-none gap-3 align-items-center icon-height"
+              >
+                <a href="#" data-tooltip="Facebook" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                    /></svg></a
+                ><a href="#" data-tooltip="Twitter" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-twitter"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                    /></svg></a
+                ><a href="#" data-tooltip="" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-messenger"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"
+                    /></svg
+                ></a>
+              </div>
+              <!-- Button Talk an Expert -->
+              <div
+                class="d-sm-flex d-none me-3 flex-grow-1 justify-content-end"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill text-nowrap"
+                >
+                  Talk an expert
+                </button>
+              </div>
+              <!-- Icons Right -->
+              <div class="d-md-flex d-none gap-2">
+                <div
+                  class="bg-light rounded-circle d-flex justify-content-center align-items-center"
+                  style="height: 25px; width: 25px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="black"
+                    class="bi bi-cart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="bg-light rounded-circle d-flex justify-content-center align-items-center"
+                  style="height: 25px; width: 25px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="black"
+                    class="bi bi-info-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                    />
+                    <path
+                      d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- Offcanvan right button -->
+
+              <button
+                class="btn d-block d-md-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <!-- Offcanvan right content -->
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close text-reset btn-close-end"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="dropdown mt-3">
+                    <button
+                      class="btn btn-secondary dropdown-toggle w-100 bg-transparent text-black border-0"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                    >
+                      Homepage
+                    </button>
+                    <ul
+                      class="dropdown-menu w-100"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown mt-3">
+                    <button
+                      class="btn btn-secondary dropdown-toggle w-100 bg-transparent text-black border-0"
+                      type="button"
+                      id="dropdownMenuButton2"
+                      data-bs-toggle="dropdown"
+                    >
+                      Who we are
+                    </button>
+                    <ul
+                      class="dropdown-menu w-100"
+                      aria-labelledby="dropdownMenuButton2"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown mt-3">
+                    <button
+                      class="btn btn-secondary dropdown-toggle w-100 bg-transparent text-black border-0"
+                      type="button"
+                      id="dropdownMenuButton3"
+                      data-bs-toggle="dropdown"
+                    >
+                      What we do
+                    </button>
+                    <ul
+                      class="dropdown-menu w-100"
+                      aria-labelledby="dropdownMenuButton3"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Nav Bottom -->
+            <div
+              class="container-fluid justify-content-start align-items-center d-none d-md-flex py-2 border-top px-5"
+            >
+              <!-- Offcanvan left button -->
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLeft"
+                aria-controls="offcanvasLeft"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-list mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+
+              <!-- Offcanvan left content -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasLeft"
+                data-bs-scroll="true"
+                aria-labelledby="offcanvasLeftLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close text-reset btn-close-off"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body px-5">
+                  <img
+                    width="900"
+                    height="450"
+                    src="https://fin.21lab.co/wp-content/uploads/2021/09/c4-1024x512.jpg"
+                    class="image wp-image-126 attachment-large size-large mb-5"
+                    alt=""
+                    loading="lazy"
+                    style="max-width: 100%; height: auto"
+                    srcset="
+                      https://fin.21lab.co/wp-content/uploads/2021/09/c4-1024x512.jpg 1024w,
+                      https://fin.21lab.co/wp-content/uploads/2021/09/c4-300x150.jpg   300w,
+                      https://fin.21lab.co/wp-content/uploads/2021/09/c4-768x384.jpg   768w,
+                      https://fin.21lab.co/wp-content/uploads/2021/09/c4-600x300.jpg   600w,
+                      https://fin.21lab.co/wp-content/uploads/2021/09/c4.jpg          1170w
+                    "
+                    sizes="(max-width: 900px) 100vw, 900px"
+                  />
+                  <p>
+                    Our firm provides the expert support organisations need to
+                    thrive in a fast-changing world.
+                  </p>
+                  <p class="mb-5">
+                    <strong>Address:</strong> 1270 Beverley Rd Brooklyn, New
+                    York 11226 United States.<br />
+                    <strong>Phone:</strong>
+                    <a href="#" class="link-off">0712 610 33 181</a><br />
+                    <strong>Mail:</strong>
+                    <a href="#" class="link-off">info@example.com</a>
+                  </p>
+                  <form id="offcanvas-form">
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Your Name"
+                      name="name"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="form-control mb-3"
+                      id="exampleInputPassword1"
+                      placeholder="Phone Number"
+                      name="phone"
+                      required
+                    />
+                    <button type="submit" class="btn btn-success w-100">
+                      Request a Callback
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="btn-group dropdown">
+                <button
+                  class="btn btn-secondary-outline text-white btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="dropdownMenuButton1"
+                >
+                  Homepage
+                </button>
+                <ul
+                  class="dropdown-menu p-2"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <span>Home 1</span>
+                  </li>
+                  <li>
+                    <span>Home 2</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-group dropdown">
+                <button
+                  class="btn btn-secondary-outline text-white btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="dropdownMenuButton2"
+                >
+                  Who we are
+                </button>
+                <ul
+                  class="dropdown-menu p-2"
+                  aria-labelledby="dropdownMenuButton2"
+                >
+                  <li>
+                    <span>Home 3</span>
+                  </li>
+                  <li>
+                    <span>Home 4</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-group dropdown">
+                <button
+                  class="btn btn-secondary-outline text-white btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="dropdownMenuButton3"
+                >
+                  What we do
+                </button>
+                <ul
+                  class="dropdown-menu p-2"
+                  aria-labelledby="dropdownMenuButton3"
+                >
+                  <li>
+                    <span>Home 5</span>
+                  </li>
+                  <li>
+                    <span>Home 6</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div
+        class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end p-5 shop-bg text-white"
+      >
+        <h2>Shop</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="#">Finlab</a></li>
+            <li class="breadcrumb-item" aria-current="page">Products</li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <div class="row">
+        <!-- Form -->
+        <div class="col col-12 col-md-3 order-md-1 order-2 bord">
+          <form class="w-100 d-flex flex-column gap-5 mb-5">
+            <!-- Categories -->
+            <div class="w-100 d-flex flex-column justify-content-start gap-2">
+              <h3>Categories</h3>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="business"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Business
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="financial"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Finance & Law
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="human"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Human Resources
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="sales"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sales Book
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="uncategorized"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Uncategorized
+                </label>
+              </div>
+            </div>
+            <!-- Colors -->
+            <div class="w-100 d-flex flex-column justify-content-start gap-2">
+              <h3>Colors</h3>
+              <div class="w-100 d-flex">
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="red"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Red
+                  </label>
+                </div>
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="blue"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Blue
+                  </label>
+                </div>
+              </div>
+              <div class="w-100 d-flex">
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="green"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Green
+                  </label>
+                </div>
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="yellow"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yellow
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- Range -->
+            <div class="w-100 d-flex flex-column justify-content-start gap-2">
+              <h3>Filter by price</h3>
+              <input
+                type="range"
+                name="range"
+                class="form-range"
+                id="customRange1"
+              />
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          <!-- Box Contact -->
+          <div
+            class="w-100 d-flex flex-column gap-2 bg-primary bg-opacity-10 p-4"
+          >
+            <h6 class="text-success">Are you Ready</h6>
+            <h4 class="text-dark">Your Future in Finance Starts Here.</h4>
+            <p>
+              We Know The Importance Of Delivering The Best Customer Experience.
+            </p>
+            <button type="button" class="btn btn-success">Contact Now</button>
+          </div>
+        </div>
+        <!-- Products -->
+        <div class="col col-12 col-md-9 order-md-2 order-1 bord">
+          <div class="container">
+            <!-- Cards -->
+            <div class="row">
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s1.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s1"
+                />
+
+                <div class="card-body p-0 mt-3 mb-5 p-0 mt-3">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s2.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s2"
+                />
+                <div class="card-body p-0 mt-3 mb-5 p-0 mt-3">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s3.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s3"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s4.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s4"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s6.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s6"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s5.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s5"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s7.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s7"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s8.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s8"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s9.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s9"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="footer-bg py-5 d-flex flex-column align-items-center justify-content-center"
+    >
+      <!-- Footer Hero -->
+      <div
+        class="row container d-flex flex-column align-items-center justify-content-center mb-5"
+      >
+        <h1 class="text-white w-auto">Your Future in Finance</h1>
+        <h1 class="text-white w-auto">Starts Here</h1>
+        <p class="w-auto text-secondary">
+          Learn more about our commercial loan broker training program & join
+          our family of over 700 successful entrepreneurs.
+        </p>
+        <div class="col col-md-3 col-6 d-flex justify-content-center">
+          <button type="button" class="btn btn-success w-100">
+            Get My Free Proposal
+          </button>
+        </div>
+      </div>
+      <!-- Contacts -->
+      <div class="row w-100 border-bottom pb-5">
+        <div class="col col-12 col-md-8">
+          <div class="d-flex flex-wrap w-100 justify-content-between px-5">
+            <ul class="list-unstyled text-white">
+              <li><strong>Follow Us</strong></li>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Linkedin</li>
+            </ul>
+            <ul class="list-unstyled text-white">
+              <li><strong>Company</strong></li>
+              <li>About Us</li>
+              <li>Our People</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+            <ul class="list-unstyled text-white">
+              <li><strong>Services</strong></li>
+              <li>Accounting</li>
+              <li>Financial</li>
+              <li>Investments</li>
+              <li>Tax</li>
+            </ul>
+            <ul class="list-unstyled text-white">
+              <li><strong>Industries</strong></li>
+              <li>Automotive</li>
+              <li>Banking</li>
+              <li>Insurance</li>
+              <li>Healt Care</li>
+            </ul>
+            <p class="w-100 text-secondary">
+              Address: 1270 Beverley Rd Brooklyn, New York 11226 United
+              States.<br />
+              Phone: <a href="#">0712 610 33 181</a>&nbsp; | Mail:
+              <a href="#">info@example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col col-12 col-md-4">
+          <form action="" class="px-5">
+            <p class="text-secondary">
+              By providing your e-mail address, you are consenting to receive
+              press releases, presentations and other information concerning
+              FinLab.
+            </p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              class="w-75"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="row w-100 d-flex justify-content-center align-items-center mt-5"
+      >
+        <p class="text-secondary w-auto px-5">
+          Copyright © 2021 LineThemes. Designed and Developed by LineThemes only
+          on Envato Market.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-end border-bottom-0">
+            <button
+              type="button"
+              class="btn-close text-reset btn-close-off"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" id="modale-shop" class="d-flex flex-column p-4">
+              <div
+                class="w-100 d-flex justify-content-between border-bottom mb-3"
+              >
+                <label for="im">I'm a/an</label>
+                <select class="w-75 border-0" name="i'm" id="im">
+                  <option value="freelancer">Freelancer</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div
+                class="w-100 d-flex justify-content-between border-bottom mb-3"
+              >
+                <label for="iwant">I Want</label>
+                <select class="w-75 border-0" name="i want" id="iwant">
+                  <option value="callme">Call me</option>
+                  <option value="emailme">Email me</option>
+                </select>
+              </div>
+              <div
+                class="w-100 d-flex justify-content-between border-bottom mb-3"
+              >
+                <label for="interested">I Interested</label>
+                <select
+                  class="w-75 border-0"
+                  name="interested"
+                  id="iinterested"
+                >
+                  <option value="financial">Financial</option>
+                  <option value="tax">Tax</option>
+                </select>
+              </div>
+              <div
+                class="w-100 d-flex flex-column justify-content-between border-bottom mb-3"
+              >
+                <label for="nameModal">Your Name*</label>
+                <input
+                  class="w-100 border"
+                  type="text"
+                  name="name"
+                  id="nameModal"
+                  placeholder="Eg: John Doe"
+                  required
+                />
+              </div>
+              <div class="w-100 d-flex justify-content-between mb-3">
+                <div class="w-50 d-flex flex-column me-2">
+                  <label for="emailModal">Your Email*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="emailModal"
+                    placeholder="company@fuffa.com"
+                    required
+                    class="w-100 border"
+                  />
+                </div>
+                <div class="w-50 d-flex flex-column">
+                  <label for="phoneModal">Your Phone</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phoneModal"
+                    placeholder="+43432432"
+                    required
+                    class="w-100 border"
+                  />
+                </div>
+              </div>
+              <div
+                class="w-100 d-flex flex-column justify-content-between border-bottom mb-3"
+              >
+                <label for="messageModal">Message</label>
+                <textarea
+                  id="messageModal"
+                  name="message"
+                  rows="4"
+                  cols="50"
+                  class="border-light"
+                >
+                </textarea>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <input
+                  class="me-2"
+                  type="checkbox"
+                  checked
+                  name="privacy"
+                  id="privacy"
+                />
+                <label for="privacy"
+                  >I agree to receive communications from FinLab.</label
+                >
+              </div>
+              <div class="w-50">
+                <button
+                  class="btn-success text-white w-auto px-5 py-2"
+                  type="submit"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-25 bg-light border fixed-bottom mb-5 ms-5 p-3" id="cookies">
+      <h3>COOKIES</h3>
+      <div class="d-flex w-100 justify-content-around">
+        <button
+          type="button"
+          value="Rifiuta"
+          class="bg-secondary text-black py-1 px-3"
+        >
+          Rifiuta
+        </button>
+        <button
+          type="button"
+          value="Accetta"
+          class="bg-success text-white py-1 px-3"
+        >
+          Accetta
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
