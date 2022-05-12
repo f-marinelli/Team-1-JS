@@ -11,13 +11,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/shop.css" />
+    <script src="../js/shop.js" defer></script>
+    <script src="../js/index.js" defer></script>
 
     <title>Finlab - Shop</title>
   </head>
   <body>
+    <!-- test -->
     <header>
       <!-- Nav Envato-->
-      <nav class="navbar navbar-light sticky-top p-2 bg-dark">
+      <nav class="navbar navbar-light fixed-top p-2 bg-dark">
         <div class="container-fluid">
           <img
             class="img-nav"
@@ -29,7 +32,7 @@
       </nav>
 
       <!-- Nav Finlab -->
-      <div class="container-fluid nav-background">
+      <div class="container-fluid nav-background mar-nav-fix">
         <div class="row">
           <nav class="navbar nav-background-tr p-0">
             <!-- Nav Top -->
@@ -92,6 +95,8 @@
               <!-- Button Talk an Expert -->
               <div
                 class="d-sm-flex d-none me-3 flex-grow-1 justify-content-end"
+                data-toggle="modal"
+                data-target="#exampleModal"
               >
                 <button
                   type="button"
@@ -328,24 +333,24 @@
                     <strong>Mail:</strong>
                     <a href="#" class="link-off">info@example.com</a>
                   </p>
-                  <form>
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="Phone Number"
-                      />
-                    </div>
+                  <form id="offcanvas-form">
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Your Name"
+                      name="name"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="form-control mb-3"
+                      id="exampleInputPassword1"
+                      placeholder="Phone Number"
+                      name="phone"
+                      required
+                    />
                     <button type="submit" class="btn btn-success w-100">
                       Request a Callback
                     </button>
@@ -438,6 +443,349 @@
       </div>
     </header>
 
+    <main class="container my-5">
+      <div class="row">
+        <!-- Form -->
+        <div class="col col-12 col-md-3 order-md-1 order-2 bord">
+          <form class="w-100 d-flex flex-column gap-5 mb-5">
+            <!-- Categories -->
+            <div class="w-100 d-flex flex-column justify-content-start gap-2">
+              <h3>Categories</h3>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="business"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Business
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="financial"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Finance & Law
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="human"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Human Resources
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="sales"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sales Book
+                </label>
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="uncategorized"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Uncategorized
+                </label>
+              </div>
+            </div>
+            <!-- Colors -->
+            <div class="w-100 d-flex flex-column justify-content-start gap-2">
+              <h3>Colors</h3>
+              <div class="w-100 d-flex">
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="red"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Red
+                  </label>
+                </div>
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="blue"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Blue
+                  </label>
+                </div>
+              </div>
+              <div class="w-100 d-flex">
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="green"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Green
+                  </label>
+                </div>
+                <div class="w-50">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="yellow"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yellow
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- Range -->
+            <div class="w-100 d-flex flex-column justify-content-start gap-2">
+              <h3>Filter by price</h3>
+              <input
+                type="range"
+                name="range"
+                class="form-range"
+                id="customRange1"
+              />
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          <!-- Box Contact -->
+          <div
+            class="w-100 d-flex flex-column gap-2 bg-primary bg-opacity-10 p-4"
+          >
+            <h6 class="text-success">Are you Ready</h6>
+            <h4 class="text-dark">Your Future in Finance Starts Here.</h4>
+            <p>
+              We Know The Importance Of Delivering The Best Customer Experience.
+            </p>
+            <button type="button" class="btn btn-success">Contact Now</button>
+          </div>
+        </div>
+        <!-- Products -->
+        <div class="col col-12 col-md-9 order-md-2 order-1 bord">
+          <div class="container">
+            <!-- Cards -->
+            <div class="row">
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s1.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s1"
+                />
+
+                <div class="card-body p-0 mt-3 mb-5 p-0 mt-3">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s2.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s2"
+                />
+                <div class="card-body p-0 mt-3 mb-5 p-0 mt-3">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s3.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s3"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s4.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s4"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s6.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s6"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s5.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s5"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s7.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s7"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s8.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s8"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card col col-6 col-md-4 mb-2">
+                <img
+                  class="img-fluid"
+                  src="https://fin.21lab.co/wp-content/uploads/2019/01/s9.jpg"
+                  width="600"
+                  height="740"
+                  alt=""
+                  title="s9"
+                />
+                <div class="card-body p-0 mt-3 mb-5">
+                  <h5 class="card-title">Be a Better Sales Rep</h5>
+                  <div class="d-flex flex-column h-25 overflow-hidden">
+                    <p class="card-text h-100">$15.00</p>
+                    <span class="h-100 text-success card-cart"
+                      >Add To Cart</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-0 start-10 badge bg-success m-2"
+                  >SALE!</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer
       class="footer-bg py-5 d-flex flex-column align-items-center justify-content-center"
     >
@@ -506,7 +854,7 @@
             </p>
             <input
               type="email"
-              name="EMAIL"
+              name="email"
               placeholder="Your email address"
               class="w-75"
             />
@@ -524,9 +872,175 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-end border-bottom-0">
+            <button
+              type="button"
+              class="btn-close text-reset btn-close-off"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" id="modale-shop" class="d-flex flex-column p-4">
+              <div
+                class="w-100 d-flex justify-content-between border-bottom mb-3"
+              >
+                <label for="im">I'm a/an</label>
+                <select class="w-75 border-0" name="i'm" id="im">
+                  <option value="freelancer">Freelancer</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div
+                class="w-100 d-flex justify-content-between border-bottom mb-3"
+              >
+                <label for="iwant">I Want</label>
+                <select class="w-75 border-0" name="i want" id="iwant">
+                  <option value="callme">Call me</option>
+                  <option value="emailme">Email me</option>
+                </select>
+              </div>
+              <div
+                class="w-100 d-flex justify-content-between border-bottom mb-3"
+              >
+                <label for="interested">I Interested</label>
+                <select
+                  class="w-75 border-0"
+                  name="interested"
+                  id="iinterested"
+                >
+                  <option value="financial">Financial</option>
+                  <option value="tax">Tax</option>
+                </select>
+              </div>
+              <div
+                class="w-100 d-flex flex-column justify-content-between border-bottom mb-3"
+              >
+                <label for="nameModal">Your Name*</label>
+                <input
+                  class="w-100 border"
+                  type="text"
+                  name="name"
+                  id="nameModal"
+                  placeholder="Eg: John Doe"
+                  required
+                />
+              </div>
+              <div class="w-100 d-flex justify-content-between mb-3">
+                <div class="w-50 d-flex flex-column me-2">
+                  <label for="emailModal">Your Email*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="emailModal"
+                    placeholder="company@fuffa.com"
+                    required
+                    class="w-100 border"
+                  />
+                </div>
+                <div class="w-50 d-flex flex-column">
+                  <label for="phoneModal">Your Phone</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phoneModal"
+                    placeholder="+43432432"
+                    required
+                    class="w-100 border"
+                  />
+                </div>
+              </div>
+              <div
+                class="w-100 d-flex flex-column justify-content-between border-bottom mb-3"
+              >
+                <label for="messageModal">Message</label>
+                <textarea
+                  id="messageModal"
+                  name="message"
+                  rows="4"
+                  cols="50"
+                  class="border-light"
+                >
+                </textarea>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <input
+                  class="me-2"
+                  type="checkbox"
+                  checked
+                  name="privacy"
+                  id="privacy"
+                />
+                <label for="privacy"
+                  >I agree to receive communications from FinLab.</label
+                >
+              </div>
+              <div class="w-50">
+                <button
+                  class="btn-success text-white w-auto px-5 py-2"
+                  type="submit"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="col-10 col-sm-5 col-md-4 col-lg-3 bg-light border fixed-bottom mb-4 mb-sm-5 ms-2 ms-sm-5 p-3"
+      id="cookies"
+    >
+      <h3>COOKIES</h3>
+      <div class="d-flex w-100 justify-content-around">
+        <button
+          type="button"
+          value="Rifiuta"
+          class="bg-secondary text-black py-1 px-3"
+        >
+          Rifiuta
+        </button>
+        <button
+          type="button"
+          value="Accetta"
+          class="bg-success text-white py-1 px-3"
+        >
+          Accetta
+        </button>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
   </body>
