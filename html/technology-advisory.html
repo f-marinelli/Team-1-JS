@@ -13,6 +13,8 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Technology Advisory Services</title>
+  <script src="../js/index.js" defer></script>
+
 </head>
 
 <body>
@@ -321,18 +323,18 @@
       </div>
       <div class="offcanvas-footer canvas-margin-top">
         <h4>Request a CallBack</h4>
-        <form>
+        <form id="offcanvas-form">
           <div class="form-group">
             <label for="exampleInputEmail1">Your Name</label>
             <input type="text" class="form-control" id="exampleInputName1" aria-describedby="textHelp"
-              placeholder="Your Name" required />
+              placeholder="Your Name" name="name" required />
           </div>
           <div class="form-group">
             <label for="exampleInputPhoneNumber1">Phone Number</label>
-            <input type="password" class="form-control" id="exampleInputPhoneNumber1" placeholder="Phone Number"
+            <input type="number" class="form-control" name="phone" id="exampleInputPhoneNumber1" placeholder="Phone Number"
               required />
           </div>
-          <button type="button" class="btn btn-success">
+          <button type="submit" class="btn btn-success">
             Request a CallBack
           </button>
         </form>
@@ -371,38 +373,38 @@
             <option value="3">Request Additional Information</option>
           </select>
 
-          <form>
+          <form id="2-tech">
             <div class="form-group">
-              <label for="Name">Your Name</label>
-              <input type="text" class="form-control" id="Name" placeholder="Es.Mario Rossi" />
+              <label for="Name2">Your Name</label>
+              <input type="text" class="form-control" id="Name2" name="name" placeholder="Es.Mario Rossi" />
             </div>
             <div class="form-row d-flex">
               <div class="form-group col-md-6">
-                <label for="inputEmail4">Your Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="marioRossi@gmai.com" />
+                <label for="inputEmail42">Your Email</label>
+                <input type="email" class="form-control" name="email" id="inputEmail42" placeholder="marioRossi@gmai.com" />
               </div>
               <div class="form-group col-md-6">
-                <label for="inputNumber4">Your Phone Number</label>
-                <input type="password" class="form-control" id="inputNumber4" placeholder="Numero completo" />
+                <label for="inputNumber45">Your Phone Number</label>
+                <input type="password" class="form-control" name="phone" id="inputNumber45" placeholder="Numero completo" />
               </div>
             </div>
 
             <div class="form-group">
               <label for="inputAddress2">Message</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Enter Message" />
+              <input type="text" class="form-control" name="message" id="inputAddress2" placeholder="Enter Message" />
+            </div>
+            <div class="modal-footer d-flex flex-column">
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" name="agree" type="checkbox" id="gridCheck" />
+                  <label class="form-check-label" for="gridCheck">
+                    I agree to receive communications from FinLab.
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success">Send Message</button>
             </div>
           </form>
-        </div>
-        <div class="modal-footer d-flex flex-column">
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" />
-              <label class="form-check-label" for="gridCheck">
-                I agree to receive communications from FinLab.
-              </label>
-            </div>
-          </div>
-          <button type="button" class="btn btn-success">Send Message</button>
         </div>
       </div>
     </div>
@@ -769,39 +771,39 @@
               <option value="3">Request Additional Information</option>
             </select>
 
-            <form>
+            <form id="tech-3">
               <div class="form-group">
                 <label for="Name">Your Name</label>
-                <input type="text" class="form-control" id="Name" placeholder="Es.Mario Rossi" />
+                <input type="text" class="form-control" name="name" id="Name" placeholder="Es.Mario Rossi" />
               </div>
               <div class="form-row d-flex">
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">Your Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="marioRossi@gmai.com" />
+                  <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="marioRossi@gmai.com" />
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="inputNumber4">Your Phone Number</label>
-                  <input type="password" class="form-control" id="inputNumber4" placeholder="Numero completo" />
+                  <label for="inputNumber46">Your Phone Number</label>
+                  <input type="password" class="form-control" name="phone" id="inputNumber46" placeholder="Numero completo" />
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
                   placeholder="Enter Message"></textarea>
               </div>
-            </form>
-          </div>
-          <div class="modal-footer d-flex flex-column">
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" />
-                <label class="form-check-label" for="gridCheck">
-                  I agree to receive communications from FinLab.
-                </label>
+              <div class="modal-footer d-flex flex-column">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" name="agree" type="checkbox" id="gridCheck3" />
+                    <label class="form-check-label" for="gridCheck3">
+                      I agree to receive communications from FinLab.
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
               </div>
-            </div>
-            <button type="button" class="btn btn-success">Send Message</button>
+            </form>
           </div>
         </div>
 
@@ -904,6 +906,17 @@
     </div>
   </footer>
 
+  <div class="w-25 bg-light border fixed-bottom mb-5 ms-5 p-3" id="cookies">
+    <h3>COOKIES</h3>
+    <div class="d-flex w-100 justify-content-around">
+      <button type="button" value="Rifiuta" class="bg-secondary text-black py-1 px-3">
+        Rifiuta
+      </button>
+      <button type="button" value="Accetta" class="bg-success text-white py-1 px-3">
+        Accetta
+      </button>
+    </div>
+  </div>
 
 
 

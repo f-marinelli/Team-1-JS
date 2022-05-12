@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="../css/shop.css" />
     <script src="../js/shop.js" defer></script>
+    <script src="../js/index.js" defer></script>
 
     <title>Finlab - Shop</title>
   </head>
@@ -332,26 +333,24 @@
                     <strong>Mail:</strong>
                     <a href="#" class="link-off">info@example.com</a>
                   </p>
-                  <form>
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="Phone Number"
-                        required
-                      />
-                    </div>
+                  <form id="offcanvas-form">
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Your Name"
+                      name="name"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="form-control mb-3"
+                      id="exampleInputPassword1"
+                      placeholder="Phone Number"
+                      name="phone"
+                      required
+                    />
                     <button type="submit" class="btn btn-success w-100">
                       Request a Callback
                     </button>
@@ -456,7 +455,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  name="business"
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
@@ -467,7 +466,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  name="financial"
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
@@ -478,7 +477,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  name="human"
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
@@ -489,7 +488,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  name="sales"
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
@@ -500,7 +499,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  name="uncategorized"
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
@@ -516,7 +515,7 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value=""
+                    name="red"
                     id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
@@ -527,7 +526,7 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value=""
+                    name="blue"
                     id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
@@ -540,7 +539,7 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value=""
+                    name="green"
                     id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
@@ -551,7 +550,7 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value=""
+                    name="yellow"
                     id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
@@ -563,7 +562,12 @@
             <!-- Range -->
             <div class="w-100 d-flex flex-column justify-content-start gap-2">
               <h3>Filter by price</h3>
-              <input type="range" class="form-range" id="customRange1" />
+              <input
+                type="range"
+                name="range"
+                class="form-range"
+                id="customRange1"
+              />
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
           </form>
@@ -850,7 +854,7 @@
             </p>
             <input
               type="email"
-              name="EMAIL"
+              name="email"
               placeholder="Your email address"
               class="w-75"
             />
@@ -888,12 +892,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form action="" class="d-flex flex-column p-4">
+            <form action="" id="modale-shop" class="d-flex flex-column p-4">
               <div
                 class="w-100 d-flex justify-content-between border-bottom mb-3"
               >
                 <label for="im">I'm a/an</label>
-                <select class="w-75 border-0" name="im" id="im">
+                <select class="w-75 border-0" name="i'm" id="im">
                   <option value="freelancer">Freelancer</option>
                   <option value="other">Other</option>
                 </select>
@@ -902,7 +906,7 @@
                 class="w-100 d-flex justify-content-between border-bottom mb-3"
               >
                 <label for="iwant">I Want</label>
-                <select class="w-75 border-0" name="iwant" id="iwant">
+                <select class="w-75 border-0" name="i want" id="iwant">
                   <option value="callme">Call me</option>
                   <option value="emailme">Email me</option>
                 </select>
@@ -910,10 +914,10 @@
               <div
                 class="w-100 d-flex justify-content-between border-bottom mb-3"
               >
-                <label for="iinterested">I Interested</label>
+                <label for="interested">I Interested</label>
                 <select
                   class="w-75 border-0"
-                  name="iinterested"
+                  name="interested"
                   id="iinterested"
                 >
                   <option value="financial">Financial</option>
@@ -927,7 +931,7 @@
                 <input
                   class="w-100 border"
                   type="text"
-                  name="nameModal"
+                  name="name"
                   id="nameModal"
                   placeholder="Eg: John Doe"
                   required
@@ -938,7 +942,7 @@
                   <label for="emailModal">Your Email*</label>
                   <input
                     type="email"
-                    name="emailModal"
+                    name="email"
                     id="emailModal"
                     placeholder="company@fuffa.com"
                     required
@@ -949,7 +953,7 @@
                   <label for="phoneModal">Your Phone</label>
                   <input
                     type="tel"
-                    name="phoneModal"
+                    name="phone"
                     id="phoneModal"
                     placeholder="+43432432"
                     required
@@ -963,7 +967,7 @@
                 <label for="messageModal">Message</label>
                 <textarea
                   id="messageModal"
-                  name="messageModal"
+                  name="message"
                   rows="4"
                   cols="50"
                   class="border-light"
@@ -993,6 +997,26 @@
             </form>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="w-25 bg-light border fixed-bottom mb-5 ms-5 p-3" id="cookies">
+      <h3>COOKIES</h3>
+      <div class="d-flex w-100 justify-content-around">
+        <button
+          type="button"
+          value="Rifiuta"
+          class="bg-secondary text-black py-1 px-3"
+        >
+          Rifiuta
+        </button>
+        <button
+          type="button"
+          value="Accetta"
+          class="bg-success text-white py-1 px-3"
+        >
+          Accetta
+        </button>
       </div>
     </div>
 
